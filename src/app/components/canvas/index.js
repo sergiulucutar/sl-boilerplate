@@ -1,7 +1,6 @@
 import { Camera, Renderer, Transform } from 'ogl'
 
 import Home from './home'
-import Story from './story'
 
 const TEMPLATES = {
   home: 'home'
