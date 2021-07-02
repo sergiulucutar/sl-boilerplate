@@ -4,9 +4,7 @@ import Home from './home'
 import Story from './story'
 
 const TEMPLATES = {
-  home: 'home',
-  story: 'story',
-  about: 'about'
+  home: 'home'
 }
 
 export default class Canvas {
@@ -94,13 +92,6 @@ export default class Canvas {
     switch (template) {
       case TEMPLATES.home:
         this.template = new Home({
-          gl: this.gl,
-          scene: this.scene,
-          viewport: this.viewport
-        })
-        break
-      case TEMPLATES.story:
-        this.template = new Story({
           gl: this.gl,
           scene: this.scene,
           viewport: this.viewport
